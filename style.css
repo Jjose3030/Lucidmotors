@@ -23,13 +23,14 @@
 body {
     background-color: var(--color-bg-black);
     color: var(--text-light);
+    overflow-x: hidden;
 }
 /* stling for the complete header section */
 .notii {
     position: relative;
     display: block;
     background-color: var(--color-gold);
-    padding: 15px;
+    padding-block: 15px;
     font-size: 13.5px;
     text-align: center;
     z-index: 30;
@@ -50,6 +51,7 @@ header {
     height: calc(100vh - 30px);
     position: relative;
     z-index: 0;
+    overflow: visible;
 }
 .vid1 {
     width: 100%;
@@ -67,7 +69,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 40;
+    z-index: 40000;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -153,7 +155,8 @@ ul li:hover::after {
     width: calc(100vw - 15px);
     left: calc(-73.3vw + 512px );
     display: none;
-    z-index: 99;
+    z-index: 9999;
+    overflow: visible;
     padding: 50px 20px 20px 20px;
 }
 .drop-cont1 {
@@ -369,11 +372,13 @@ p.price sup {
 .sect1 {
     position: relative;
     height: 100vh;
+    z-index: -1;
 }
 .vid2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 .gravi {
     position: absolute;
@@ -431,6 +436,8 @@ p.price sup {
     overflow-y: hidden;
 }
 .overf p {
+    display: block;
+    position: relative;
     flex-shrink: 0;
 }
 .overf p a {
