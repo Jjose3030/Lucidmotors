@@ -424,16 +424,19 @@ p.price sup {
 }
 .info {
     width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
 }
 .overf {
     display: flex;
     width: 90%;
     justify-content: center;
     gap: 25px;
+    padding-block: 10px;
     align-items: center;
     margin: 40px auto;
-    overflow-x: auto;
-    overflow-y: hidden;
+  
 }
 .overf p {
     display: block;
