@@ -30,8 +30,7 @@ body {
     position: relative;
     display: block;
     background-color: var(--color-gold);
-    padding-block: 15px;
-    font-size: 13.5px;
+    padding: 15px;
     text-align: center;
     z-index: 30;
 }
@@ -846,7 +845,7 @@ footer {
 }
 .socials {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     margin-top: 4rem;
 }
 .socials a  {
@@ -889,6 +888,33 @@ footer {
     margin-block: 20px;
     font-size: 11.5px;
 }
+.book-mark {
+    background-color: var(--color-gray-mid);
+    position: fixed;
+    width: max-content;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+}
+.book-mark a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+.book-mark a:visited {
+    color: var(--text-light);
+}
+.book-mark i {
+    color: var(--text-light);
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* media queries */
 
@@ -1178,6 +1204,11 @@ p.stre {
 .img-scale {
     height: 300px;
 }
+    .notii p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+}
 }
 @media (max-width: 770px) {
     .head-content, .gravi {
@@ -1250,7 +1281,7 @@ p.price {
 }
 .splt {
     width: 60%;
-    gap: 20px;
+    gap: px;
 }
 .spll {
     width: 50%;
@@ -1401,7 +1432,10 @@ form {
     width: 100%; 
 }
 .spll:nth-child(2), .spll:last-child {
-    padding-left: 0px;
+    padding-left: 13px;
+}
+    .head-content, .gravi {
+    padding: 0px 20px;
 }
 }
  @media (max-width: 550px) {
@@ -1414,6 +1448,24 @@ form {
  .socials {
         justify-content: space-between;
     }
+    .grid-foot h2 {
+        font-size: 13px;
+    }
+    .grid-foot a {
+        font-size: 12px;
+}
+    .privacy {
+        font-size: 11px;
+    }
+    .notii {
+        padding: 15px 20px;
+    }
+        .notii p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
 }
  @media (max-width: 450px) {
     .story-header, .privacy, .socials, .foot-grid, form, .sect6 > h2, .grid-cont2, .story-header, .caption, .grid-cont1, .info, .long2, .long1,.sect2 > p, .sect2 > h2, .fot {
@@ -1430,5 +1482,16 @@ form {
     .socials a  {
     width: 30px;
     height: 30px;
+    }
+    .notii {
+        padding: 10px 20px;
+    }
+    .notii p {
+        font-weight: 400;
+    }
+}
+@media (max-width: 320px) {
+     .but1, .but2 {
+        font-size: 10.8px;
     }
 }
